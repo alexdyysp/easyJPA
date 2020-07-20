@@ -13,7 +13,7 @@ public class BaseDAO<T> {
     private static BasicDataSource dataSource = new BasicDataSource();
 
     static {
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/testForJPA?useSSL=false");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
